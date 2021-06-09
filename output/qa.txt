@@ -1,0 +1,40 @@
+﻿YourComputableMyIGNameHere : Validation Results
+=========================================
+
+err = 6, warn = 0, info = 1
+IG Publisher Version: 1.1.73
+Generated Wed Jun 09 18:31:10 EDT 2021. FHIR version 4.0.1 for example.fhir.uv.myig#0.2.0 (canonical = http://somewhere.org/fhir/uv/myig)
+
+ Build Errors : 2 / 0 / 0
+ /Users/jshivers3-gtri/t12/sample-ig/input/examples/Binary-example : 0 / 0 / 1
+ /Users/jshivers3-gtri/t12/sample-ig/input/examples/Library-example : 5 / 0 / 2
+ /Users/jshivers3-gtri/t12/sample-ig/input/examples/Patient-example : 0 / 0 / 3
+ /Users/jshivers3-gtri/t12/sample-ig/input/history/h1 : 0 / 1 / 2
+ /Users/jshivers3-gtri/t12/sample-ig/input/history/h1 : 0 / 1 / 2
+ /Users/jshivers3-gtri/t12/sample-ig/input/myig : 0 / 0 / 1
+ /Users/jshivers3-gtri/t12/sample-ig/input/resources/library-example-image : 0 / 0 / 1
+ /Users/jshivers3-gtri/t12/sample-ig/input/resources/library-example-sql : 0 / 0 / 1
+ /Users/jshivers3-gtri/t12/sample-ig/input/resources/myObservation : 0 / 1 / 1
+ /Users/jshivers3-gtri/t12/sample-ig/input/resources/valueset-no-codesystem : 0 / 2 / 1
+ not relevant : 0 / 1 / 3
+</table>
+== n/a ==
+ERROR: /Users/jshivers3-gtri/t12/sample-ig/input/cql/notincluded.cql: CQL source was not associated with a library resource in the IG.
+ERROR: /Users/jshivers3-gtri/t12/sample-ig/output/Library-example.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 198, column 3878: The link 'TBD' for "TBD" cannot be resolved
+== /Users/jshivers3-gtri/t12/sample-ig/input/examples/Binary-example.json ==
+== /Users/jshivers3-gtri/t12/sample-ig/input/examples/Library-example.json ==
+ERROR: Library/example: Library.subject.ofType(CodeableConcept).coding[0]: Coding.system must be an absolute reference, not a local reference
+INFORMATION: Library/example: Library.subject.ofType(CodeableConcept).coding[0]: Code System URI 'hl7.org/fhir/resource-types' is unknown so the code cannot be validated
+ERROR: Library/example: Library.relatedArtifact[0].resource: Canonical URL 'http://hl7.org/fhir/Library/FHIR-ModelInfo|4.0.1' does not resolve
+ERROR: Library/example: Library.relatedArtifact[1].resource: Canonical URL 'http://hl7.org/fhir/Library/FHIRHelpers|4.0.1' does not resolve
+ERROR: Library/example: Library.relatedArtifact[7].resource: Canonical URLs must be absolute URLs if they are not fragment references (TBD) 
+ERROR: Library/example: Library.dataRequirement[4].codeFilter[0].valueSet: Canonical URLs must be absolute URLs if they are not fragment references (TBD) 
+== /Users/jshivers3-gtri/t12/sample-ig/input/examples/Patient-example.xml ==
+== /Users/jshivers3-gtri/t12/sample-ig/input/history/h1.json ==
+== /Users/jshivers3-gtri/t12/sample-ig/input/history/h1.json ==
+== /Users/jshivers3-gtri/t12/sample-ig/input/myig.xml ==
+== /Users/jshivers3-gtri/t12/sample-ig/input/resources/library-example-image.xml ==
+== /Users/jshivers3-gtri/t12/sample-ig/input/resources/library-example-sql.xml ==
+== /Users/jshivers3-gtri/t12/sample-ig/input/resources/myObservation.xml ==
+== /Users/jshivers3-gtri/t12/sample-ig/input/resources/valueset-no-codesystem.xml ==
+== /Users/jshivers3-gtri/t12/sample-ig/input/resources/resources-spreadsheet.xml ==
