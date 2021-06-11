@@ -26,7 +26,7 @@
      ]
   ];
   fhir:Library.date [ fhir:value "2020-05-15T00:00:00.000+10:00"^^xsd:dateTime];
-  fhir:Library.publisher [ fhir:value "HL7 International - [Some] Work Group"];
+  fhir:Library.publisher [ fhir:value "GTRI"];
   fhir:Library.contact [
      fhir:index 0;
      fhir:ContactDetail.telecom [

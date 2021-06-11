@@ -20,7 +20,7 @@ CurrentOfficial is an official name for the patient that does not have an end da
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2019-09-01"/>
-  <publisher value="HL7 International - [Some] Work Group"/>
+  <publisher value="GTRI"/>
   <contact>
     <telecom>
       <system value="url"/>

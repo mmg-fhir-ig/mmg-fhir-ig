@@ -19,7 +19,7 @@
   fhir:ValueSet.status [ fhir:value "draft"];
   fhir:ValueSet.experimental [ fhir:value "true"^^xsd:boolean];
   fhir:ValueSet.date [ fhir:value "2015-06-22"^^xsd:date];
-  fhir:ValueSet.publisher [ fhir:value "HL7 International - [Some] Work Group"];
+  fhir:ValueSet.publisher [ fhir:value "GTRI"];
   fhir:ValueSet.contact [
      fhir:index 0;
      fhir:ContactDetail.telecom [

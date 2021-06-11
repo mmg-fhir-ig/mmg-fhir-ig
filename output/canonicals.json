@@ -4,7 +4,7 @@
     "type": "ImplementationGuide",
     "url": "http://somewhere.org/fhir/uv/myig/ImplementationGuide/example.fhir.uv.myig",
     "version": "0.2.0",
-    "name": "YourComputableMyIGNameHere"
+    "name": "mmgfhirig"
   },
   {
     "id": "example",
@@ -61,5 +61,12 @@
     "url": "http://somewhere.org/fhir/uv/myig/ValueSet/valueset-no-codesystem",
     "version": "0.2.0",
     "name": "ValueSetWithNoCodeSystem"
+  },
+  {
+    "id": "performingLab",
+    "type": "StructureDefinition",
+    "url": "https://mmg-fhir-ig.github.io/sample-ig/output/performingLab",
+    "version": "0.2.0",
+    "name": "Performing Laboratory"
   }
 ]

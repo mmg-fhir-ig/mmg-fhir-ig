@@ -32,8 +32,8 @@
        fhir:Coding.code [ fhir:value "Patient" ]
      ]
   ];
-  fhir:Library.date [ fhir:value "2021-06-09T18:30:08-04:00"^^xsd:dateTime];
-  fhir:Library.publisher [ fhir:value "HL7 International - [Some] Work Group"];
+  fhir:Library.date [ fhir:value "2021-06-11T11:58:52-04:00"^^xsd:dateTime];
+  fhir:Library.publisher [ fhir:value "GTRI"];
   fhir:Library.contact [
      fhir:index 0;
      fhir:ContactDetail.telecom [

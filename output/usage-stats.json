@@ -30,6 +30,12 @@
         "url": "http://somewhere.org/fhir/uv/myig/StructureDefinition/mypractitioner",
         "title": "Some Practitioner profile"
       }
+    ],
+    "Organization": [
+      {
+        "url": "https://mmg-fhir-ig.github.io/sample-ig/output/performingLab",
+        "title": "Performing Laboratory profile"
+      }
     ]
   },
   "usage": {
