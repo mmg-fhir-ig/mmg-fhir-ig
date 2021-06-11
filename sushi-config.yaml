@@ -1,0 +1,8 @@
+canonical: http://somewhere.org/fhir/uv/myig
+fhirVersion: 4.0.1
+FSHOnly: true
+applyExtensionMetadataToRoot: false
+id: example.fhir.uv.myig
+name: mmgfhirig
+status: draft
+version: 0.2.0
