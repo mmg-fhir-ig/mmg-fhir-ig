@@ -57,3 +57,21 @@ e: {
   "error" : "Error from server: Unable to provide support for code system http://not-a-known-code-system"
 }
 -------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://not-a-known-code-system",
+      "concept" : [{
+        "code" : "not-known-code"
+      },
+      {
+        "code" : "not-known-code2"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "Error from server: Unable to provide support for code system http://not-a-known-code-system"
+}
+-------------------------------------------------------------------------------------

@@ -21,6 +21,13 @@
     "name": "ExampleLibraryImage"
   },
   {
+    "id": "GOFSH-GENERATED-ID-0",
+    "type": "Library",
+    "url": "http://somewhere.org/fhir/uv/myig/Library/example-image",
+    "version": "0.2.0",
+    "name": "ExampleLibraryImage"
+  },
+  {
     "id": "example-sql",
     "type": "Library",
     "url": "http://somewhere.org/fhir/uv/myig/Library/example-sql",
@@ -28,11 +35,18 @@
     "name": "ExampleLibrary"
   },
   {
-    "id": "ext-myExtension",
-    "type": "StructureDefinition",
-    "url": "http://somewhere.org/fhir/uv/myig/StructureDefinition/ext-myExtension",
+    "id": "GOFSH-GENERATED-ID-1",
+    "type": "Library",
+    "url": "http://somewhere.org/fhir/uv/myig/Library/example-sql",
     "version": "0.2.0",
-    "name": "MyExtension"
+    "name": "ExampleLibrary"
+  },
+  {
+    "id": "mmg-fhir-specimen",
+    "type": "StructureDefinition",
+    "url": "http://somewhere.org/fhir/uv/myig/StructureDefinition/mmg-fhir-specimen",
+    "version": "0.2.0",
+    "name": "MMGFHIRSpecimen"
   },
   {
     "id": "myObservation",
@@ -46,14 +60,7 @@
     "type": "StructureDefinition",
     "url": "http://somewhere.org/fhir/uv/myig/StructureDefinition/mypatient",
     "version": "0.2.0",
-    "name": "MyPatientName"
-  },
-  {
-    "id": "mypractitioner",
-    "type": "StructureDefinition",
-    "url": "http://somewhere.org/fhir/uv/myig/StructureDefinition/mypractitioner",
-    "version": "0.2.0",
-    "name": "MyPractitionerName"
+    "name": "MyPatient"
   },
   {
     "id": "valueset-no-codesystem",
@@ -63,10 +70,10 @@
     "name": "ValueSetWithNoCodeSystem"
   },
   {
-    "id": "performingLab",
+    "id": "performing-laboratory",
     "type": "StructureDefinition",
     "url": "https://mmg-fhir-ig.github.io/sample-ig/output/performingLab",
     "version": "0.2.0",
-    "name": "Performing Laboratory"
+    "name": "PerformingLaboratory"
   }
 ]

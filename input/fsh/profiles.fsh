@@ -39,12 +39,11 @@ Description: "A profile showing the use of XML to author profiles"
 * component[Diastolic].valueQuantity.code 1.. MS
 * component[Diastolic].valueQuantity.code = #mm[Hg] (exactly)
 
-Profile: Performing_Laboratory
+Profile: PerformingLaboratory
 Parent: Organization
-Id: performingLab
+Id: performing-laboratory
 Title: "Performing Laboratory profile"
 Description: "A profile showing the use of XML to author profiles"
-* ^name = "Performing Laboratory"
 * ^url = "https://mmg-fhir-ig.github.io/sample-ig/output/performingLab"
 * ^status = #draft
 * type 1..1 MS
@@ -52,14 +51,20 @@ Description: "A profile showing the use of XML to author profiles"
 * name MS
 * address.state MS
 
-Profile: Testing_Specimen
+Profile: MMGFHIRSpecimen
 Parent: Specimen
-Id: testingSpecimen
-Title: "Testing Specimen profile"
+Id: mmg-fhir-specimen
+Title: "MMG FHIR Specimen profile"
 Description: "A profile for testing specimen results"
-* ^name = "Testing Specimen"
-* ^url = "https://mmg-fhir-ig.github.io/sample-ig/output/testingSpecimen"
 * ^status = #draft
 * type 0..1 MS
-* collection only Quantity or CodeableConcept
-* collection MS
+* collection.collectedDateTime 0..1 MS
+* collection.bodySite 0..1 MS
+* identifier 0..* MS
+
+Profile: MyPatient
+Parent: Patient
+Id: mypatient
+Title: "My Patient"
+Description: "Patient Profile Extension"
+* ^version = "0.2.0"

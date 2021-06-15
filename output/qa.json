@@ -3,9 +3,9 @@
   "name": "mmgfhirig",
   "package-id": "example.fhir.uv.myig",
   "ig-ver": "0.2.0",
-  "date": "Fri, 11 Jun, 2021 11:58:52 -0400",
-  "errs": 8,
-  "warnings": 3,
+  "date": "Tue, 15 Jun, 2021 09:35:46 -0400",
+  "errs": 15,
+  "warnings": 7,
   "hints": 3,
   "version": "4.0.1",
   "tool": "4.6.0 (3)"

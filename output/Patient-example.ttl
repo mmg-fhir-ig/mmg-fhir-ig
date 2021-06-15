@@ -16,8 +16,8 @@
      ]
   ];
   fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>My awesome extension</b>: false</p><p><b>name</b>: Jack Smith , John Jacob Jingleheimer Smith (OFFICIAL), John Jacob Jingleheimer Smith (OFFICIAL)</p></div>"
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>name</b>: Jack Smith , John Jacob Jingleheimer Smith (OFFICIAL), John Jacob Jingleheimer Smith (OFFICIAL)</p></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;

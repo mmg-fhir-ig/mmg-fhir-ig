@@ -11,7 +11,7 @@
   "title": "MMG FHIR IG",
   "status": "draft",
   "experimental": false,
-  "date": "2021-06-11T11:58:52-04:00",
+  "date": "2021-06-15T09:35:46-04:00",
   "publisher": "GTRI",
   "contact": [
     {
@@ -354,12 +354,6 @@
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
       }
     ],
-    "grouping": [
-      {
-        "id": "resources-spreadsheet.xml",
-        "name": "not relevant"
-      }
-    ],
     "resource": [
       {
         "extension": [
@@ -371,7 +365,7 @@
         "reference": {
           "reference": "StructureDefinition/mypatient"
         },
-        "name": "My Favorite Patient Profile",
+        "name": "My Patient",
         "description": "Overriding description because we can"
       },
       {
@@ -472,19 +466,6 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/performingLab"
-        },
-        "name": "Performing Laboratory profile",
-        "description": "A profile showing the use of XML to author profiles"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
           "reference": "StructureDefinition/myObservation"
         },
         "name": "My Observation Profile",
@@ -494,15 +475,13 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
+            "valueString": "Library"
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/ext-myExtension"
+          "reference": "Library/GOFSH-GENERATED-ID-0"
         },
-        "name": "MyExtension",
-        "description": "What this extension means.",
-        "groupingId": "resources-spreadsheet.xml"
+        "name": "Example Library Image"
       },
       {
         "extension": [
@@ -512,11 +491,35 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/mypractitioner"
+          "reference": "StructureDefinition/mmg-fhir-specimen"
         },
-        "name": "MyPractitionerName",
-        "description": "Description for the profile page",
-        "groupingId": "resources-spreadsheet.xml"
+        "name": "MMG FHIR Specimen profile",
+        "description": "A profile for testing specimen results"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Library"
+          }
+        ],
+        "reference": {
+          "reference": "Library/GOFSH-GENERATED-ID-1"
+        },
+        "name": "Example Library"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/performing-laboratory"
+        },
+        "name": "Performing Laboratory profile",
+        "description": "A profile showing the use of XML to author profiles"
       }
     ],
     "page": {

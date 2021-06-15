@@ -7,7 +7,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>EXAMPLE.FHIR.UV.MYIG\My Favorite Patient Profile - Mappings - FHIR v4.0.1</title>
+    <title>EXAMPLE.FHIR.UV.MYIG\My Patient - Mappings - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -121,7 +121,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>My Favorite Patient Profile</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>My Patient</b></li>
 
           <span style="float:right;">
 
@@ -216,7 +216,7 @@
 
 
 <a name="root"> </a>
-<h2 id="root">Resource Profile: MyPatientName - Mappings</h2>
+<h2 id="root">Resource Profile: MyPatient - Mappings</h2>
 
 <p>Mappings for the mypatient resource profile.</p>
 
@@ -226,27 +226,15 @@
 
 
   <a name="rim"> </a><h3>Mappings for RIM Mapping (<a href="http://hl7.org/comparison-v3.html">http://hl7.org/v3</a>)</h3><table class="grid">
- <tr><td colspan="3"><b>MyPatientName</b></td></tr>
+ <tr><td colspan="3"><b>MyPatient</b></td></tr>
  <tr><td>Patient</td><td>Entity. Role, or Act, Patient[classCode=PAT]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;text</td><td>Act.text?</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;contained</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;extension</td><td>N/A</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>id</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;active</td><td>statusCode</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;name</td><td>name</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;name (CurrentOfficial)</td><td>name</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;use</td><td>unique(./use)</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text</td><td>./formatted</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;family</td><td>./part[partType = FAM]</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;given</td><td>./part[partType = GIV]</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;prefix</td><td>./part[partType = PFX]</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;suffix</td><td>./part[partType = SFX]</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;period</td><td>./usablePeriod[type=&quot;IVL&lt;TS&gt;&quot;]</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;start</td><td>./low</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;telecom</td><td>telecom</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;gender</td><td>player[classCode=PSN|ANM and determinerCode=INSTANCE]/administrativeGender</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;birthDate</td><td>player[classCode=PSN|ANM and determinerCode=INSTANCE]/birthTime</td> </tr>
@@ -282,12 +270,11 @@
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type</td><td>typeCode</td> </tr>
 </table>
 <a name="cda"> </a><h3>Mappings for CDA (R2) (<a href="http://hl7.org/comparison-cda.html">http://hl7.org/v3/cda</a>)</h3><table class="grid">
- <tr><td colspan="3"><b>MyPatientName</b></td></tr>
+ <tr><td colspan="3"><b>MyPatient</b></td></tr>
  <tr><td>Patient</td><td>ClinicalDocument.recordTarget.patientRole</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>.id</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;active</td><td>n/a</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;name</td><td>.patient.name</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;name (CurrentOfficial)</td><td>.patient.name</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;telecom</td><td>.telecom</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;gender</td><td>.patient.administrativeGenderCode</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;birthDate</td><td>.patient.birthTime</td> </tr>
@@ -314,25 +301,16 @@
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type</td><td>n/a</td> </tr>
 </table>
 <a name="w5"> </a><h3>Mappings for FiveWs Pattern Mapping (http://hl7.org/fhir/fivews)</h3><table class="grid">
- <tr><td colspan="3"><b>MyPatientName</b></td></tr>
+ <tr><td colspan="3"><b>MyPatient</b></td></tr>
  <tr><td>Patient</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>FiveWs.identifier</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;active</td><td>FiveWs.status</td> </tr>
 </table>
 <a name="v2"> </a><h3>Mappings for HL7 v2 Mapping (<a href="http://hl7.org/comparison-v2.html">http://hl7.org/v2</a>)</h3><table class="grid">
- <tr><td colspan="3"><b>MyPatientName</b></td></tr>
+ <tr><td colspan="3"><b>MyPatient</b></td></tr>
  <tr><td>Patient</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>PID-3</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;name</td><td>PID-5, PID-9</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;name (CurrentOfficial)</td><td>PID-5, PID-9</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;use</td><td>XPN.7, but often indicated by which field contains the name</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text</td><td>implied by XPN.11</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;family</td><td>XPN.1/FN.1</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;given</td><td>XPN.2 + XPN.3</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;prefix</td><td>XPN.5</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;suffix</td><td>XPN/4</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;period</td><td>XPN.13 + XPN.14</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;start</td><td>DR.1</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;telecom</td><td>PID-13, PID-14, PID-40</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;gender</td><td>PID-8</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;birthDate</td><td>PID-7</td> </tr>
@@ -356,7 +334,7 @@
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;other</td><td>PID-3, MRG-1</td> </tr>
 </table>
 <a name="loinc"> </a><h3>Mappings for LOINC code for the element (<a href="http://loinc.org">http://loinc.org</a>)</h3><table class="grid">
- <tr><td colspan="3"><b>MyPatientName</b></td></tr>
+ <tr><td colspan="3"><b>MyPatient</b></td></tr>
  <tr><td>Patient</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;birthDate</td><td>21112-8</td> </tr>
 </table>
@@ -435,7 +413,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7.org/Special/committees/[something]">GTRI</a>.  Package example.fhir.uv.myig#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jun 11, 2021 11:58-0400">2021-06-11</span>
+          IG &#169; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7.org/Special/committees/[something]">GTRI</a>.  Package example.fhir.uv.myig#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jun 15, 2021 09:35-0400">2021-06-15</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

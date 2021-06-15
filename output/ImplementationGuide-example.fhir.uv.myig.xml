@@ -12,7 +12,7 @@
   <title value="MMG FHIR IG"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2021-06-11T11:58:52-04:00"/>
+  <date value="2021-06-15T09:35:46-04:00"/>
   <publisher value="GTRI"/>
   <contact>
     <telecom>
@@ -223,9 +223,6 @@
         <valueString value="true"/>
       </extension>
     </extension>
-    <grouping id="resources-spreadsheet.xml">
-      <name value="not relevant"/>
-    </grouping>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
@@ -233,7 +230,7 @@
       <reference>
         <reference value="StructureDefinition/mypatient"/>
       </reference>
-      <name value="My Favorite Patient Profile"/>
+      <name value="My Patient"/>
       <description value="Overriding description because we can"/>
     </resource>
     <resource>
@@ -310,16 +307,6 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/performingLab"/>
-      </reference>
-      <name value="Performing Laboratory profile"/>
-      <description value="A profile showing the use of XML to author profiles"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/myObservation"/>
       </reference>
       <name value="My Observation Profile"/>
@@ -327,25 +314,41 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
+        <valueString value="Library"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/ext-myExtension"/>
+        <reference value="Library/GOFSH-GENERATED-ID-0"/>
       </reference>
-      <name value="MyExtension"/>
-      <description value="What this extension means."/>
-      <groupingId value="resources-spreadsheet.xml"/>
+      <name value="Example Library Image"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/mypractitioner"/>
+        <reference value="StructureDefinition/mmg-fhir-specimen"/>
       </reference>
-      <name value="MyPractitionerName"/>
-      <description value="Description for the profile page"/>
-      <groupingId value="resources-spreadsheet.xml"/>
+      <name value="MMG FHIR Specimen profile"/>
+      <description value="A profile for testing specimen results"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Library"/>
+      </extension>
+      <reference>
+        <reference value="Library/GOFSH-GENERATED-ID-1"/>
+      </reference>
+      <name value="Example Library"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/performing-laboratory"/>
+      </reference>
+      <name value="Performing Laboratory profile"/>
+      <description value="A profile showing the use of XML to author profiles"/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>

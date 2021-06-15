@@ -1,10 +1,12 @@
+/* 
 Instance: example-of-Binary
 InstanceOf: Binary
 Title: "Example binary"
 Description: "Example showing binary content"
 Usage: #definition
 * id = "example"
-* data = "ig-loader-example.pdf"
+* contentType 1..1 = "<code>"
+
 
 Instance: example-of-Library
 InstanceOf: Library
@@ -18,7 +20,7 @@ Usage: #example
 * experimental = true
 * description = "Some example library"
 * type = $library-type#logic-library
-* subjectCodeableConcept = hl7.org/fhir/resource-types#Patient
+* subjectCodeableConcept = http://hl7.org/fhir/resource-types#Patient
 * content.id = "ig-loader-example.cql"
 
 Instance: h1
@@ -27,7 +29,9 @@ Usage: #example
 * type = #collection
 * entry.fullUrl = "http://somewhere.org/fhir/uv/myig/Provenance/h1-1"
 * entry.resource = h1-1
+*/
 
+/*
 Instance: example-of-$mypatient
 InstanceOf: $mypatient
 Title: "Simple patient example"
@@ -51,6 +55,7 @@ Usage: #example
 * name[=].given[+] = "Jacob"
 * name[=].given[+] = "Jingleheimer"
 * name[=].period.start = "2001-01-01"
+*/
 
 Instance: GOFSH-GENERATED-ID-0
 InstanceOf: Library

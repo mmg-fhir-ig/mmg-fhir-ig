@@ -1,4 +1,3 @@
-Alias: $mypatient = http://somewhere.org/fhir/uv/myig/StructureDefinition/mypatient
 Alias: $not-a-known-code-system = http://not-a-known-code-system
 Alias: $library-type = http://terminology.hl7.org/CodeSystem/library-type
 Alias: $v3-DataOperation = http://terminology.hl7.org/CodeSystem/v3-DataOperation
