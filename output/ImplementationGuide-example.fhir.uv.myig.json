@@ -11,7 +11,7 @@
   "title": "MMG FHIR IG",
   "status": "draft",
   "experimental": false,
-  "date": "2021-06-15T09:35:46-04:00",
+  "date": "2021-06-15T13:41:09-04:00",
   "publisher": "GTRI",
   "contact": [
     {
@@ -470,6 +470,18 @@
         },
         "name": "My Observation Profile",
         "description": "A profile showing the use of XML to author profiles"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/mmg-fhir-observation-lab"
+        },
+        "name": "MMG FHIR Observation Lab Profile"
       },
       {
         "extension": [

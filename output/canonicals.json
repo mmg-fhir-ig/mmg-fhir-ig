@@ -42,6 +42,13 @@
     "name": "ExampleLibrary"
   },
   {
+    "id": "mmg-fhir-observation-lab",
+    "type": "StructureDefinition",
+    "url": "http://somewhere.org/fhir/uv/myig/StructureDefinition/mmg-fhir-observation-lab",
+    "version": "0.2.0",
+    "name": "MMGFHIRObservationLab"
+  },
+  {
     "id": "mmg-fhir-specimen",
     "type": "StructureDefinition",
     "url": "http://somewhere.org/fhir/uv/myig/StructureDefinition/mmg-fhir-specimen",

@@ -1,13 +1,14 @@
 ﻿mmgfhirig : Validation Results
 =========================================
 
-err = 15, warn = 7, info = 3
+err = 15, warn = 9, info = 3
 IG Publisher Version: 1.1.73
-Generated Tue Jun 15 09:36:21 EDT 2021. FHIR version 4.0.1 for example.fhir.uv.myig#0.2.0 (canonical = http://somewhere.org/fhir/uv/myig)
+Generated Tue Jun 15 13:41:42 EDT 2021. FHIR version 4.0.1 for example.fhir.uv.myig#0.2.0 (canonical = http://somewhere.org/fhir/uv/myig)
 
- Build Errors : 2 / 2 / 0
+ Build Errors : 2 / 3 / 0
  /Users/Shared/edu.gatech.chai.mmgfhirig/mmg-fhir-ig/fsh-generated/resources/Library-GOFSH-GENERATED-ID-0 : 3 / 0 / 1
  /Users/Shared/edu.gatech.chai.mmgfhirig/mmg-fhir-ig/fsh-generated/resources/Library-GOFSH-GENERATED-ID-1 : 3 / 0 / 1
+ /Users/Shared/edu.gatech.chai.mmgfhirig/mmg-fhir-ig/fsh-generated/resources/StructureDefinition-mmg-fhir-observation-lab : 0 / 1 / 1
  /Users/Shared/edu.gatech.chai.mmgfhirig/mmg-fhir-ig/fsh-generated/resources/StructureDefinition-mmg-fhir-specimen : 0 / 1 / 1
  /Users/Shared/edu.gatech.chai.mmgfhirig/mmg-fhir-ig/fsh-generated/resources/StructureDefinition-myObservation : 0 / 1 / 1
  /Users/Shared/edu.gatech.chai.mmgfhirig/mmg-fhir-ig/fsh-generated/resources/StructureDefinition-mypatient : 0 / 0 / 1
@@ -24,6 +25,7 @@ Generated Tue Jun 15 09:36:21 EDT 2021. FHIR version 4.0.1 for example.fhir.uv.m
 </table>
 == n/a ==
 ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/mmg-fhir-ig/input/cql/notincluded.cql: CQL source was not associated with a library resource in the IG.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/mmg-fhir-observation-lab.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Library/GOFSH-GENERATED-ID-0.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Library/GOFSH-GENERATED-ID-1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/mmg-fhir-ig/output/Library-example.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 198, column 3878: The link 'TBD' for "TBD" cannot be resolved
@@ -35,6 +37,8 @@ ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/mmg-fhir-ig/fsh-generated/resourc
 ERROR: Library.where(url = 'http://somewhere.org/fhir/uv/myig/Library/example-sql'): Conformance resource /Users/Shared/edu.gatech.chai.mmgfhirig/mmg-fhir-ig/fsh-generated/resources/Library-GOFSH-GENERATED-ID-1.json - the canonical URL (http://somewhere.org/fhir/uv/myig/Library/GOFSH-GENERATED-ID-1) does not match the URL (http://somewhere.org/fhir/uv/myig/Library/example-sql)
 ERROR: Library.url: Resource id/url mismatch: GOFSH-GENERATED-ID-1/http://somewhere.org/fhir/uv/myig/Library/example-sql
 ERROR: /Users/Shared/edu.gatech.chai.mmgfhirig/mmg-fhir-ig/fsh-generated/resources/Library-GOFSH-GENERATED-ID-1: URL Mismatch http://somewhere.org/fhir/uv/myig/Library/GOFSH-GENERATED-ID-1 vs http://somewhere.org/fhir/uv/myig/Library/example-sql
+== /Users/Shared/edu.gatech.chai.mmgfhirig/mmg-fhir-ig/fsh-generated/resources/StructureDefinition-mmg-fhir-observation-lab.json ==
+WARNING: StructureDefinition.where(url = 'http://somewhere.org/fhir/uv/myig/StructureDefinition/mmg-fhir-observation-lab'): The Implementation Guide contains no examples for this profile
 == /Users/Shared/edu.gatech.chai.mmgfhirig/mmg-fhir-ig/fsh-generated/resources/StructureDefinition-mmg-fhir-specimen.json ==
 WARNING: StructureDefinition.where(url = 'http://somewhere.org/fhir/uv/myig/StructureDefinition/mmg-fhir-specimen'): The Implementation Guide contains no examples for this profile
 == /Users/Shared/edu.gatech.chai.mmgfhirig/mmg-fhir-ig/fsh-generated/resources/StructureDefinition-myObservation.json ==

@@ -12,7 +12,7 @@
   <title value="MMG FHIR IG"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2021-06-15T09:35:46-04:00"/>
+  <date value="2021-06-15T13:41:09-04:00"/>
   <publisher value="GTRI"/>
   <contact>
     <telecom>
@@ -311,6 +311,15 @@
       </reference>
       <name value="My Observation Profile"/>
       <description value="A profile showing the use of XML to author profiles"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/mmg-fhir-observation-lab"/>
+      </reference>
+      <name value="MMG FHIR Observation Lab Profile"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

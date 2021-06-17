@@ -39,29 +39,6 @@ Description: "A profile showing the use of XML to author profiles"
 * component[Diastolic].valueQuantity.code 1.. MS
 * component[Diastolic].valueQuantity.code = #mm[Hg] (exactly)
 
-Profile: PerformingLaboratory
-Parent: Organization
-Id: performing-laboratory
-Title: "Performing Laboratory profile"
-Description: "A profile showing the use of XML to author profiles"
-* ^url = "https://mmg-fhir-ig.github.io/sample-ig/output/performingLab"
-* ^status = #draft
-* type 1..1 MS
-* type = urn:temp:mmgfhirig#LAB "Laboratory"
-* name MS
-* address.state MS
-
-Profile: MMGFHIRSpecimen
-Parent: Specimen
-Id: mmg-fhir-specimen
-Title: "MMG FHIR Specimen profile"
-Description: "A profile for testing specimen results"
-* ^status = #draft
-* type 0..1 MS
-* collection.collectedDateTime 0..1 MS
-* collection.bodySite 0..1 MS
-* identifier 0..* MS
-
 Profile: MyPatient
 Parent: Patient
 Id: mypatient
