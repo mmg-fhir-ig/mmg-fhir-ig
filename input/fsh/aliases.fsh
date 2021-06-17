@@ -4,3 +4,9 @@ Alias: $v3-DataOperation = http://terminology.hl7.org/CodeSystem/v3-DataOperatio
 Alias: $provenance-participant-type = http://terminology.hl7.org/CodeSystem/provenance-participant-type
 Alias: $loinc = http://loinc.org
 Alias: $observation-status = http://terminology.hl7.org/CodeSystem/observation-category
+Alias: $notifiable-event-code-list = https://phinvads.cdc.gov/vads/ViewValueSet.action?id=E07E5EFA-829F-EA11-818D-005056ABE2F0
+Alias: $clinician-observed-lesions = https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7195
+Alias: $cdc-country = https://phinvads.cdc.gov/vads/ViewValueSet.action?id=8628EEFE-2F6A-4BC1-BBEB-609153F92CF7
+Alias: $cdc-state = https://phinvads.cdc.gov/vads/ViewValueSet.action?id=80D34BBC-617F-DD11-B38D-00188B398520
+Alias: $cdc-city = https://phinvads.cdc.gov/vads/ViewValueSet.action?id=F208B136-6F39-44E7-BD8B-7F1AB130D458
+Alias: $cdc-county = https://phinvads.cdc.gov/vads/ViewValueSet.action?id=FA221794-C665-E811-98FD-0017A477041A
